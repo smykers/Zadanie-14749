@@ -1,69 +1,49 @@
-body{
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
-
-div{
-    position: relative;
-   
-}
-
-
-#header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    font-size: 70%;
-}
-
-
-img{
-    height: 100%;
+div#image {
+    background-image: url("/obrazy/man-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 60vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-
-#pic2 {
-    display: none;
+div#header {
+    opacity: 0;
 }
 
-@media (max-width: 1170px){
+div#caption {
+    top: 60vh;
+    text-align: center;
+}
 
-    #header{
-        top: 20%;
-        left: 60%;
+@media(min-width: 992px) {
+    div#image {
+        background-image: url(/obrazy/man-2.jpg);
+        justify-content: flex-end;
+        height: 80vh;
     }
-
-    #pic1{
-        display: none;
+    div#caption {
+        opacity: 0;
     }
-
-    #pic2{
-        display: block;
-        height: 70%;
+    div#header {
+        opacity: 1;
+        color: white;
+        flex-grow: 1;
+        margin-left: 80vh;
+        margin-top: 10vh;
     }
 }
 
-@media(max-width: 992px){
-
-    #header{
-        color: black;
-        top: 100%;
-        left: 30%;
-
+@media (min-width: 1170px) {
+    div#image {
+        background-image: url(/obrazy/man-1.jpg);
     }
-
-    #pic1{
-        display: block;
-        height: 50%;
+    div#header {
+        opacity: 1;
+        color: white;
+        flex-grow: 1;
+        margin-left: 10vh;
+        margin-top: 30vh;
     }
-
-    #pic2{
-        display:none;
-    }
-    
 }
-
-
