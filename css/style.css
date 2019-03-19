@@ -1,5 +1,5 @@
 div#image {
-    background-image: url("/obrazy/man-1.jpg");
+    background-image: url('/obrazy/man-1.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 60vh;
@@ -19,7 +19,7 @@ div#caption {
 
 @media(min-width: 992px) {
     div#image {
-        background-image: url(/obrazy/man-2.jpg);
+        background-image: url('/obrazy/man-2.jpg');
         justify-content: flex-end;
         height: 80vh;
     }
@@ -37,7 +37,7 @@ div#caption {
 
 @media (min-width: 1170px) {
     div#image {
-        background-image: url(/obrazy/man-1.jpg);
+        background-image: url('/obrazy/man-1.jpg');
     }
     div#header {
         opacity: 1;
