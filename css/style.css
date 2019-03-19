@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 div#image {
     background-image: url('/obrazy/man-1.jpg');
     background-size: 100%;
